@@ -1,0 +1,92 @@
+.galeria {
+    padding: 2rem 1rem;
+    background-color: #000000;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.categoria a {
+    text-decoration: none;
+    color: white;
+}
+.categoria p {
+    font-family: var(--fuente-links);
+}
+.categoria a:hover p {
+    color: var(--color-primario);
+}
+
+.flecha {
+    color: var(--color-gris);
+}
+
+.contenedor:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+.contenedor {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.contenedor-reseña {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    font-family: var(--fuente-links);
+    font-size: 0.7rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.contenedor:hover .contenedor-reseña {
+    transition-duration: 300ms;
+    top: 40%;
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.contenedor-botones-miniaturas {
+  position: absolute;
+  top: -5%;
+}
+.contenedor-botones-miniaturas .reproducir, .contenedor-botones-miniaturas .boton-reproductor {
+  text-decoration: none;
+}
+
+.contenedor-botones-miniaturas .reproducir {
+  color: white;
+  background-color: var(--color-primario);
+  height: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+}
+
+.contenedor-botones-miniaturas .reproducir:hover, .contenedor-botones-miniaturas .reproducir:hover i {
+  color: #0a58ca;
+}
+
+
+.contenedor-botones-miniaturas .boton-reproductor {
+  background-color: #212529;
+  height: 1.3rem;
+  width: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.contenedor-botones-miniaturas .boton-reproductor:hover {
+  color: var(--color-primario);
+}

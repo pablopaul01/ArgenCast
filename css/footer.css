@@ -1,0 +1,50 @@
+footer {
+    background-color: var(--color-dark);
+    width: 100%;
+    min-height: 5rem;
+    color: white;
+    font-family: var(--fuente-links);
+}
+
+.fila-footer {
+    min-height: 5rem;
+}
+
+.logo-foot {
+    width: 7.5rem;
+}
+
+.redes {
+    color: white;
+    font-size: 1.6rem;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.columna-contacto {
+    width: 100%;
+}
+
+i:hover {
+    color: var(--color-gris);
+}
+
+.columna-contacto:hover {
+    color: var(--color-primario);
+}
+
+@media only screen and (max-width:768px){
+    .redes-agrupado i, .titulo-redes {
+        font-size: 1rem;
+    }
+   .logo-foot {
+    transform: scale(1.2);
+   }
+   .columna-contacto {
+    font-size: 1rem;
+   }
+}
+

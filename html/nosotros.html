@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sobre nosotros</title>
+    <link rel="stylesheet" href="../css/nosotros.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/ea0d6f4a72.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html"
+            ><img
+              src="../assets/images/argencast-logo2.png"
+              alt="logo"
+              class="logo-nav"
+          /></a>
+          <button
+            class="navbar-toggler custom-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-between px-4"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link activo"
+                  aria-current="page"
+                  href="../index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Peliculas
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a
+                      class="dropdown-item"
+                      href="../html/categoriapeliculas.html"
+                      >Acción</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html">Comedia</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html">Drama</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html"
+                      >Suspenso</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html">Terror</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Series
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html">Acción</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html"
+                      >Adolescentes</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/categoriaseries.html"
+                      >Comedia</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html">Drama</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html"
+                      >Policiales</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="../html/404.html"
+                      >Suspenso</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Buscar película o serie"
+                  aria-label="Search"
+                />
+                <button class="boton-buscar botones-nav" type="submit">
+                  <i class="ri-search-line"></i>
+                </button>
+              </form>
+            </ul>
+            <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link" href="../html/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+              </li>
+              <div class="d-flex justify-content-center">
+                <button
+                  type="button"
+                  class="botones-nav me-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#staticBackdrop"
+                >
+                  <i class="fas fa-lock me-1"></i>Login
+                </button>
+                <a href="../html/subscripcion.html">
+                  <button value="registro" class="botones-nav">
+                    Suscribete
+                  </button>
+                </a>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Inicio de sesion
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body d-flex justify-content-center">
+            <form>
+              <label>
+                <i class="fas fa-user"></i>
+                Usuario
+              </label>
+              <div>
+                <input type="text" placeholder="Usuario" required />
+              </div>
+
+              <label>
+                <i class="fas fa-key"></i>
+                Contraseña
+              </label>
+              <div>
+                <input type="password" placeholder="Contraseña" required />
+              </div>
+              <div id="ingresar">
+                <button class="btn btn-info" type="submit">
+                  <i class="fas fa-lock"></i>
+                  Ingresar
+                </button> 
+              </div>
+              <div class="foot">
+                <a href="./subscripcion.html" class="new-acc">
+                  No tengo cuenta, Registrarse aqui...
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <br />
+    </div>
+
+    <main>
+      <div class="header">
+        <h1 class="mb-0">Conocé a nuestro equipo</h1>
+        <h2 class="mb-0">
+          Somos los piratas de HTML y te traemos lo mejor del cine Argentino
+        </h2>
+      </div>
+      <div class="sub-contenedor">
+        <div
+          class="teams"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="contenedor-img">
+            <img src="../assets/images/juan.png" alt="foto-juan" />
+          </div>          
+          <div class="name">Juan Pablo Salomón</div>
+          <div class="desig">Emprendedor</div>
+          <div class="about">
+            "Tengo 38 años, me dedico a emprender. Soy una apasionado desde
+            chiquito por la tecnología, la computación y la programación. Me
+            encanta la idea de poder hacer algo increíble que nace desde la
+            imaginación"
+          </div>
+          <div class="social-links">
+            <a href="./404.html"> <i class="fa fa-facebook"></i></a>
+            <a href="./404.html"> <i class="fa fa-instagram"></i></a>
+            <a href="./404.html"> <i class="fa fa-twitter"></i></a>
+            <a href="./404.html"> <i class="fa fa-github"></i></a>
+          </div>
+        </div>
+
+        <div
+          class="teams"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="contenedor-img">
+            <img src="../assets/images/fran.png" alt="Foto-fran" />
+          </div>
+          <div class="name">Francisco Palavecino</div>
+          <div class="desig">Estudiante & Emprendedor</div>
+          <div class="about">
+            "Tengo 36 años. Soy estudiante avanzado de Ing. en Sistemas, tengo
+            un emprendimiento de Software Factory; también trabajo en un club
+            deportivo en atención al cliente."
+          </div>
+          <div class="social-links">
+            <a href="./404.html"> <i class="fa fa-facebook"></i></a>
+            <a href="./404.html"> <i class="fa fa-instagram"></i></a>
+            <a href="./404.html"> <i class="fa fa-twitter"></i></a>
+            <a href="./404.html"> <i class="fa fa-github"></i></a>
+          </div>
+        </div>
+
+        <div
+          class="teams"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="contenedor-img">
+            <img src="../assets/images/julieta.png" alt="Foto-juli" />
+          </div>
+          <div class="name">Julieta Marteau</div>
+          <div class="desig">Estudiante</div>
+          <div class="about">
+            "¡Hola! Tengo 24 años y soy estudiante de Psicología y de
+            Programación Web. Trabajo como voluntaria en una ONG y como RRHH del
+            Hospital Escuela de la facultad de Psicología de la UNT (C.U.A.P)"
+          </div>
+          <div class="social-links">
+            <a href="./404.html"> <i class="fa fa-facebook"></i></a>
+            <a href="./404.html"> <i class="fa fa-instagram"></i></a>
+            <a href="./404.html"> <i class="fa fa-twitter"></i></a>
+            <a href="./404.html"> <i class="fa fa-github"></i></a>
+          </div>
+        </div>
+
+        <div
+          class="teams"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="contenedor-img">
+            <img src="../assets/images/hernan.png" alt="Foto-hernan">
+          </div>
+          <div class="name">Hernán Diaz</div>
+          <div class="desig">Programador Web</div>
+          <div class="about">
+            Hola, soy Hernán, tengo 28 años y trabajo en una panadería. Decidí estudiar programación para cumplir mi deseo de aprender más y dedicarme a esta disciplina. Mi meta final es crecer profesionalmente en el campo de la programación.
+          </div>
+          <div class="social-links">
+            <a href="./404.html"> <i class="fa fa-facebook"></i></a>
+            <a href="./404.html"> <i class="fa fa-instagram"></i></a>
+            <a href="./404.html"> <i class="fa fa-twitter"></i></a>
+            <a href="./404.html"> <i class="fa fa-github"></i></a>
+          </div>
+        </div>
+
+        <div
+          class="teams"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="contenedor-img">
+            <img src="../assets/images/ulises.png" alt="Foto-Ulises" />
+          </div>
+          <div class="name">Ulises Burgos</div>
+          <div class="desig">Programador Web</div>
+          <div class="about">
+            "Tengo 42 años. Me dedico a ser víctima de la 49i"
+          </div>
+          <div class="social-links mt-0">
+            <a href="./404.html"> <i class="fa fa-facebook"></i></a>
+            <a href="./404.html"> <i class="fa fa-instagram"></i></a>
+            <a href="./404.html"> <i class="fa fa-twitter"></i></a>
+            <a href="./404.html"> <i class="fa fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="container-fluid text-center">
+      <div class="row align-items-center fila-footer py-2">
+        <div class="col-12 col-lg-4 col-md-4 py-1">
+          <a href="../index.html">
+            <img
+              src="../assets/images/argencast-logo2.png"
+              alt="logo"
+              class="logo-foot"
+            />
+          </a>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 py-1">
+          <p class="mb-0">Nuestras redes</p>
+          <div class="redes-agrupado d-flex gap-2 justify-content-center">
+            <a href="../html/404.html"
+              ><i class="ri-facebook-circle-fill redes"></i
+            ></a>
+            <a href="../html/404.html"
+              ><i class="ri-instagram-line redes"></i
+            ></a>
+            <a href="../html/404.html"><i class="ri-twitter-line redes"></i></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4 col-md-4 py-1 d-flex flex-column">
+          <a href="../html/contacto.html" class="columna-contacto">Contacto</a>
+          <a href="../html/nosotros.html" class="columna-contacto">Nosotros</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+        '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+        (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

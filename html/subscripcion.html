@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Subscripcion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/suscripcion.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ea0d6f4a72.js" crossorigin="anonymous"></script>    
+</head>
+  <body>
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../assets/images/argencast-logo2.png" alt="logo"
+                class="logo-nav" /></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-4" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link activo" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Peliculas
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/categoriapeliculas.html">Acción</a></li>
+                    <li><a class="dropdown-item" href="../html/404.html">Comedia</a></li>
+                    <li><a class="dropdown-item" href="../html/404.html">Drama</a></li>
+                    <li><a class="dropdown-item" href="../html/404.html">Suspenso</a></li>
+                    <li><a class="dropdown-item" href="../html/404.html">Terror</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    Series
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../html/404.html">Acción</a></li>
+                    <li><a class="dropdown-item" href="../html/404.html">Adolescentes</a></li>
+                    <li><a class="dropdown-item" href="../html/categoriaseries.html">Comedia</a></li>
+                    <li><a class="dropdown-item" href="../html/404.html">Drama</a></li>
+                    <li><a class="dropdown-item" href="../html/404.html">Policiales</a></li>
+                    <li><a class="dropdown-item" href="../html/404.html">Suspenso</a></li>
+                  </ul>
+                </li>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar película o serie"
+                    aria-label="Search" />
+                  <button class="boton-buscar botones-nav" type="submit">
+                    <i class="ri-search-line"></i>
+                  </button>
+                </form>
+              </ul>
+              <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+                </li>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="botones-nav me-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    <i class="fas fa-lock me-1"></i>Login
+    
+                  </button>
+                  <a href="../html/subscripcion.html">
+                    <button value="registro" class="botones-nav">
+                      Suscribete
+                    </button>
+                  </a>
+                </div>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+    </header>
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+          aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">
+                  Inicio de sesion
+                </h5>
+                <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+              </div>
+              <div class="modal-body d-flex justify-content-center">
+                <form>
+                  <label>
+                    <i class="fas fa-user"></i>
+                    Usuario
+                  </label>
+                  <div>
+                    <input type="text" placeholder="Usuario" required />
+                  </div>    
+                  <label>
+                    <i class="fas fa-key"></i>
+                    Contraseña
+                  </label>
+                  <div>
+                    <input type="password" placeholder="Contraseña" required />
+                  </div>    
+                  <div id="ingresar">
+                    <button class="btn btn-info" type="submit">
+                      <i class="fas fa-lock"></i>
+                      Ingresar
+                    </button> 
+                  </div>    
+                  <div class="foot">
+                    <a href="./subscripcion.html" class="new-acc">
+                      No tengo cuenta, Registrarse aqui...
+                    </a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <main>
+            <div id="principal" class="container-fluid">
+                <div class="row">
+                    <div id="plan" class="col text-center">
+                      <h1 class="text-center pt-5" > CONOCE NUESTROS PLANES Y PRECIOS</h1>  
+                    </div>                    
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-10 col-sm-6 col-md-6 col-lg-3">                
+                        <div id="uno" class="card mx-0">                                            
+                            <div class="card-body">
+                                <h4 class="card-title">Gratuito</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i>Hasta 2 dispositivos </li>
+                                    <li><i class="fa-solid fa-xmark"></i>Hasta 4 dispositvos</li>
+                                    <li><i class="fa-solid fa-check"></i>Calidad SD</li>
+                                    <li><i class="fa-solid fa-check"></i>Calidad HD</li>
+                                    <li><i class="fa-solid fa-xmark"></i>Shows y recitales</li>
+                                    <li><i class="fa-solid fa-xmark"></i>Descargables</li>
+                                </ul>
+                                <div class="rounded-circle mx-auto d-flex align-items-center justify-content-center">
+                                    <h2 class="m-0">
+                                        $0
+                                    </h2>
+                                </div>
+                            </div>                        
+                            <div class="card-footer justify-content-center d-flex">
+                                <a class="btn ver-mas" href="./404.html" role="button">    
+                                Ver mas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-6 col-md-6 col-lg-3">
+                        <div id="dos" class="card mx-0">                                            
+                            <div class="card-body">
+                                <h4 class="card-title">Standard</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i>Hasta 2 dispositivos </li>
+                                    <li><i class="fa-solid fa-xmark"></i>Hasta 4 dispositvos</li>
+                                    <li><i class="fa-solid fa-check"></i>Calidad SD</li>
+                                    <li><i class="fa-solid fa-xmark"></i>Calidad HD</li>
+                                    <li><i class="fa-solid fa-xmark"></i>Shows y recitales</li>
+                                    <li><i class="fa-solid fa-xmark"></i>Descargables</li>
+                                </ul>
+                                <div  class="rounded-circle mx-auto d-flex align-items-center justify-content-center">
+                                    <h2 class="text-center m-0">
+                                        $1000
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="card-footer justify-content-center d-flex">
+                                <a class="btn ver-mas" href="./404.html" role="button">    
+                                Ver mas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-10 col-sm-6 col-md-6 col-lg-3">
+                        <div id="tres" class="card mx-0">                    
+                            <div class="card-body">
+                                <h4 class="card-title">Premium</h4>
+                                <ul>
+                                    <li><i class="fa-solid fa-check"></i>Hasta 2 dispositivos </li>
+                                    <li><i class="fa-solid fa-check"></i>Hasta 4 dispositvos</li>
+                                    <li><i class="fa-solid fa-check"></i>Calidad SD</li>
+                                    <li><i class="fa-solid fa-check"></i>Calidad HD</li>
+                                    <li><i class="fa-solid fa-check"></i>Shows y recitales</li>
+                                    <li><i class="fa-solid fa-check"></i>Descargables</li>
+                                </ul>
+                                <div  class="rounded-circle mx-auto d-flex align-items-center justify-content-center">
+                                    <h2 class="text-center m-0">
+                                        $3000
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="card-footer justify-content-center d-flex">
+                                <a class="btn ver-mas" href="./404.html" role="button">    
+                                Ver mas
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+            <div class="container-fluid">
+                <div class="row fila-sus">
+                    <div class="col-12 col-lg-5 text-center pt-4">
+                        <div id="ti-sus">
+                            <h3 class="mb-5">Suscribite al mejor cine argentino</h3>
+                        </div>
+                        <form class="formulario-sus">
+                            <div id="nombre" class="mb-1">
+                                <label for="text"  >Nombres</label>
+                                <input placeholder="Nombres" type="text" minlength="3" maxlength="26" required >
+                            </div>
+                            <div id="apellido" class="mb-1">
+                                <label  for="text"  >Apellido</label>
+                                <input  placeholder="Apellido" type="text" required /> 
+                            </div>
+                            <div class="email mb-1">
+                                <label for="text">Email</label>
+                                <input placeholder="Email" type="email" required>
+                            </div>         
+                            <div id="cont" class="mb-1">
+                                <label for="inputPassword"  >Password</label>
+                                <input placeholder="password" type="password"  minlength="6" maxlength="16" required >
+                            </div>
+
+                        <div class="mt-3 contenedor-combo">
+                                <label id="texto-planes" for="text"  >Plan</label>
+                            <select  id="combo" name="Planes">
+                                <option selected>Gratuito</option>
+                                <option>Standard</option>
+                                <option>Premium</option>
+                            </select>
+                        </div>
+
+                        <a href="../html/404.html" class="btn crear-cuenta mt-3 mb-3 " >
+                          Crear Cuenta
+                        </a>
+                            <p class="terminos">Al crear la cuenta, aceptas los <a href="./404.html" class="terminos-links">Términos y Condiciones</a>, la <a href="./404.html">Política de protección de datos</a> y la <a href="./404.html">Política de cookies</a>. Filmin va a tratar tus datos para poder prestarte sus servicios. Más información sobre tus derechos <a href="./404.html">aquí</a>.</p>
+                        </form>                        
+                    </div>
+                    <div class="d-none d-sm-inline col-12 col-lg-7 banner-sus p-0">
+                        <div class="contiene-banner-sus d-flex justify-content-end">
+                            <img src="../assets/images/cineargentino.jpg" alt="cine-argentino">
+                        </div>                        
+                    </div>
+                </div>
+            </div>       
+        </main>
+        <footer class="container-fluid text-center">
+            <div class="row align-items-center fila-footer py-2">
+                <div class="col-12 col-lg-4 col-md-4 py-1">
+                    <a href="../index.html">
+                        <img src="../assets/images/argencast-logo2.png" alt="logo" class="logo-foot" />
+                    </a>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4 py-1">
+                    <p class="mb-0">Nuestras redes</p>
+                    <div class="redes-agrupado d-flex gap-2 justify-content-center">
+                        <a href="../html/404.html"><i class="ri-facebook-circle-fill redes"></i></a>
+                        <a href="../html/404.html"><i class="ri-instagram-line redes"></i></a> 
+                        <a href="../html/404.html"><i class="ri-twitter-line redes"></i></a>                    
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-4 py-1 d-flex flex-column">
+                    <a href="../html/contacto.html" class="columna-contacto">Contacto</a>
+                    <a href="../html/nosotros.html" class="columna-contacto">Nosotros</a>
+                </div>
+            </div>
+        </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  </body>
+</html>

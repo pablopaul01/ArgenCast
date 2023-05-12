@@ -1,0 +1,146 @@
+
+.principal .carousel img{
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+}
+
+.carousel-item {
+    width: 100%;
+    height: 29%;
+
+}
+
+.galeria {
+    padding: 2rem 1rem;
+    background-color: black;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.categoria p {
+    font-family: var(--fuente-links);
+}
+
+.card.contenedor {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    height: 87%;
+}
+
+.card.contenedor:hover {
+    transition-duration: 0.5s;
+    transform: scale(1.2);
+    z-index: 3;
+}
+
+.contenedor-reseña {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    font-family: var(--fuente-links);
+    font-size: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding-top: 1rem;
+    opacity: 0;
+    visibility: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+.contenedor:hover .contenedor-reseña {
+    transition-duration: 300ms;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    visibility: visible;
+    z-index: 5;
+}
+
+.contenedor-botones-miniaturas {
+  width: 100%;
+  position: absolute;
+  top: 80%;
+  left: 20%;
+}
+.contenedor-botones-miniaturas .reproducir, .contenedor-botones-miniaturas .boton-reproductor {
+  text-decoration: none;
+}
+
+.contenedor-botones-miniaturas .reproducir {
+  color: #ffffff;
+  background-color: var(--color-primario);
+  height: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 0.7rem;
+}
+
+.contenedor-botones-miniaturas .reproducir:hover, .contenedor-botones-miniaturas .reproducir:hover i {
+  color: blue;
+}
+
+
+.contenedor-botones-miniaturas .boton-reproductor {
+  background-color: rgb(42, 42, 42);
+  height: 1.3rem;
+  width: 1.3rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  color: white;
+}
+
+.pagination > li > a
+{
+    background-color: white;
+    color: var(--color-primario);
+}
+
+.pagination > li > a:focus,
+.pagination > li > a:hover,
+.pagination > li > span:focus,
+.pagination > li > span:hover
+{
+    color: var(--color-primario);
+    background-color: #eee;
+    border-color: #ddd;
+}
+
+.pagination > .active > a
+{
+    color: white;
+    background-color: var(--color-primario);
+    border: solid 1px var(--color-primario);
+}
+
+.pagination > .active > a:hover
+{
+    background-color: var(--color-primario);
+    border: solid 1px var(--color-primario);
+}
+
+.subrayado::after {
+    content: '';
+    height: 7px;
+    width: 14rem;
+    background-color: var(--color-primario);
+    border-radius: 0.3rem;
+    display: block;
+    margin-top: 2px;
+  }
+
+  @media only screen and (max-width:626px){
+    .contenedor-botones-miniaturas .reproducir {
+        padding: 0.2rem;
+        border-radius: 0.2rem;
+        font-size: 0.9rem;
+      }
+
+      .contenedor-botones-miniaturas {
+        left: 75%;
+        top: 83%;
+      }
+  }

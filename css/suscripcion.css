@@ -1,0 +1,238 @@
+body, main {
+    background-color: rgb(10, 10, 10);;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    font-family: var(--fuente-links);
+    letter-spacing: 0.03em;
+    line-height: 1,6;
+}
+
+
+#uno{
+    background-color: white;
+    
+}
+#dos{
+
+    background-color: white;
+    
+}
+#tres{
+    background-color: white;
+    
+}
+
+h2 {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.card-title{
+    text-align: center;
+    font-size: 30px;
+    color:#212529;
+    margin-top: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.card{
+   width: 100%;
+   border-radius: 1rem;
+   overflow: hidden;
+   margin: 20px;
+   text-align: center;
+   transition: all 0.25s;
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 12px 16px  rgba(202, 201, 201, 0.2);
+}
+
+#nombre, #apellido, .email, #cont {
+    color: azure;
+    font-family: var(--fuente-links);
+}
+
+#ti-sus{
+    color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+#plan{
+    color:var(--color-primario);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.email{
+    position: relative;
+    left: 15px;
+    
+}
+.email input:invalid{
+    border: red 1px solid;
+    outline: 0;
+}
+.email input:valid{
+    border: green 1px solid;
+    outline:0;
+}
+
+#apellido{
+    position: relative;
+    left: 7px;
+}
+#apellido input:valid{
+    border: green 1px solid;
+}
+#nombre{
+    position: relative;
+    left: 4px;
+}
+#nombre input:valid{
+    border: green 2px solid;
+    
+}
+
+.contenedor-combo {
+    position: relative;
+    left: -33px;
+    margin-bottom: 1rem;
+}
+
+.planes{
+    width: 500px;
+    height: 100px;    
+}
+
+
+#combo{
+    height: 40px;
+    width: 100px;
+}
+
+#cont {
+    position: relative;
+    left: -1px;
+}
+#cont input:invalid{
+    border: red 1px solid;
+}
+
+#cont input:valid{
+    border: green 1px solid;
+}
+#verficar{
+   position: relative;
+   left: 20px;
+}
+.rounded-circle{
+    background: azure;
+    border:5px solid  #6a6a6a;
+    border:5px solid  #000000;
+    height: 8rem;
+    width: 8rem
+}
+.card-footer{
+    background-color: #160e0e;
+}
+
+#texto-planes{
+    color: azure;
+    font-family: var(--fuente-links);
+}
+
+.card-body ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding:0.4rem 0;
+    color: #fff;
+}
+
+.card-body ul li {
+    padding: 5px 0;
+    background-color:#212529;
+    margin: 2px 0
+}
+
+.fa-solid.fa-check {
+    color: greenyellow;
+    padding-right: 0.6rem;
+}
+
+.fa-solid.fa-xmark {
+    color: red;
+    padding-right: 0.6rem;
+}
+
+.ver-mas {
+    color: var(--color-primario);
+    border: var(--color-primario) 1px solid;
+}
+
+.ver-mas:hover {
+    color: #fff;
+    background-color: var(--color-primario);
+}
+
+.crear-cuenta {
+    color: #fff;
+    background-color: var(--color-primario);
+}
+
+.crear-cuenta:hover {
+    background-color: #2c97fd;
+    color: #fff;
+}
+.crear-cuenta a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.terminos {
+    color:#a9a9a9;
+    font-size: .6rem;
+}
+
+.banner-sus img{
+    height: 100%;
+    /* width: 100%; */
+}
+.contiene-banner-sus {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fila-sus {
+    background-color:#2a2a2a ;
+}
+@media only screen and (max-width:990px){
+    .contiene-banner-sus {
+        width: 100%;
+        overflow: hidden;
+    }
+    .banner-sus img{
+        width: 70rem;
+        height: 25rem;
+    }
+    .banner-sus{
+        height: 15rem;
+    }
+}
+
+
+
+@media only screen and (max-width:310px) {
+    .formulario-sus input {
+        width: 100px;
+    }
+
+    .formulario-sus h1 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+}

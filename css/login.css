@@ -1,0 +1,71 @@
+#staticBackdrop input{
+    width: 240px;
+    height: 30px;
+    outline: none;
+    border: 0.5px solid #222;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-top: 0px;
+    font-size: 16px;
+    padding-left: 10px;
+}
+
+.close span {
+    background-color: none;
+}
+.modal-title{
+    text-align: center;
+    width: 100%;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.modal-body{
+    font-family: var(--fuente-links);
+}
+
+#staticBackdrop .btn{
+    margin-top: 10px;
+    width: 240px;
+    background-color: var(--color-primario);
+}
+
+#staticBackdrop .foot{
+    margin-bottom: 40px;
+    display:flex center;
+}
+.foot .new-acc{
+    text-decoration: none;
+    position: relative;
+    font-size: 16px;
+    color: gray;
+    top: 20px;
+
+}
+.foot .new-acc:hover{
+    color: #ff0000;
+}
+
+.boton-ingresar {
+    width: 6rem;
+    padding: 1px 6px;
+    height: 40px;
+    background-color: var(--color-primario);
+    border-color: none;
+    border-radius: 0.5rem;
+}
+
+.boton-ingresar a {
+    text-decoration: none;
+    color: #000000;
+}
+
+@media only screen and (max-width:265px){
+    #staticBackdrop input{
+        width: 140px;
+    }
+    #staticBackdrop .btn{
+        width: 140px;
+    }
+}

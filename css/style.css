@@ -1,0 +1,26 @@
+:root {
+ --color-primario:#86c3fd;
+ --color-activo:#2c97fd;
+ --color-dark:#000;
+ --fuente-links: 'Roboto', sans-serif;
+ --color-gris:#6f6f81;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.boton-modal {
+    background-color: var(--color-primario);
+    color: white;
+    width: 6rem;
+    font-family: var(--fuente-links);
+    padding: 0.5rem 1rem;
+    border-radius: 0.6rem;
+    margin-top: 0.5rem;
+}
+
+.boton-modal:hover {
+    color: var(--color-activo);
+
+}

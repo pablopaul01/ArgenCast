@@ -1,0 +1,229 @@
+.sugerencia {
+    width: 100%;
+    background-color: var(--color-dark);
+    position: relative; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    color: white;
+    overflow: hidden;
+    
+}
+
+
+.sugerencia img{
+    width: 100%;
+
+}
+
+.fuente2 {
+    font-family: var(--fuente-links);
+}
+
+.fuente2 .detalle-serie {
+    color: #ffffff;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4);   
+    box-shadow: 4px -58px 116px 65px rgba(0,0,0,0.91) inset;
+-webkit-box-shadow: 4px -58px 116px 65px rgba(0,0,0,0.91) inset;
+-moz-box-shadow: 4px -58px 116px 65px rgba(0,0,0,0.91) inset;   
+    z-index: 1;
+}
+
+.capa .container-fluid {
+    height: 100%;
+    max-height: 50rem;
+}
+
+.capa .fila-contenido {
+     height: 100%;
+}
+
+.clasificacion1 {
+    background-color: var(--color-gris);
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
+.clasificacion2 {
+    border: 2px solid var(--color-gris);
+    padding: 4px;
+    border-radius: 7px;
+    font-size: 0.9rem;
+}
+
+.resumen {
+    color: darkgrey;
+    font-weight: 600;
+    text-shadow: 4px 0px 5px rgba(0,0,0,0.4);
+}
+
+
+.reproducir, .boton-reproductor {
+    text-decoration: none;
+}
+
+.reproducir {
+    color: white;
+    background-color: var(--color-primario);
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+}
+
+.reproducir:hover, .reproducir:hover i {
+    color: blue;
+}
+
+.reproduccion i {
+    color: white;
+    font-size: 2rem;
+    z-index: 2;
+}
+
+.reproduccion {
+    font-family: var(--fuente-links);
+}
+
+.boton-reproductor {
+    background-color: rgb(42, 42, 42);
+    height: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.boton-reproductor:hover {
+    color: var(--color-primario);
+}
+
+.card-img-top {
+    width: 2rem;
+    height: 20rem;
+}
+
+
+.boton-ver-cap:hover {
+    color: #212529;
+}
+
+.boton-ver-cap a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+
+@media only screen and (max-width:576px){
+    .reseña {
+        margin-top: 1rem;
+        font-size: 1rem;
+    }
+    .fuente2{
+        font-size: 0.9rem;
+    }
+
+    .reproducir {
+    color: white;
+    background-color: var(--color-primario);
+    height: 1.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+
+.reproduccion i {
+    color: white;
+    font-size: 1.5rem;
+    z-index: 2;
+}
+
+.boton-reproductor {
+    background-color: #212529;
+    height: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+.video-trailer {
+    width: 400px;
+    height: 300px;
+}
+}
+
+@media only screen and (max-width:370px){
+    .reseña {
+        margin-top: 1rem;
+    }
+
+    .reproducir {
+    color: white;
+    background-color: var(--color-primario);
+    height: 1.1rem;
+    padding: 0.8rem;
+    border-radius: 0.6rem;
+    font-size: 1.2rem;
+}
+
+.reproduccion i {
+    color: white;
+    font-size: 1.1rem;
+    z-index: 2;
+}
+
+.boton-reproductor {
+    background-color: #212529;
+    height: 1.2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.video-trailer {
+    width: 280px;
+    height: 250px;
+}
+}
+
+@media only screen and (max-width:330px){
+    .capa {
+        position: relative;
+        
+    }
+    .video-trailer {
+        width: 260px;
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width:289px){
+    .contenedor-botones {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        
+    }
+    
+    .reproducir {
+
+        padding: 0.5rem 0.1rem;
+        width: 6rem;
+        height: 2.4rem;
+        
+        border-radius: 0.6rem;
+        font-size: 1rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .video-trailer {
+        width: 200px;
+        height: 200px;
+    }
+}

@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="../assets/images/iconopes.ico" />
+  <link rel="stylesheet" href="../css/navbar.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/footer.css" />
+  <link rel="stylesheet" href="../css/categorias.css" />
+  <link rel="stylesheet" href="../css/login.css" />
+  <link rel="stylesheet" href="../css/filtros.css" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/ea0d6f4a72.js" crossorigin="anonymous"></script>
+  <title>ArgenCast</title>
+</head>
+
+<body class="conteiner-fluid">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"
+          ><img
+            src="../assets/images/argencast-logo2.png"
+            alt="logo"
+            class="logo-nav"
+        /></a>
+        <button
+          class="navbar-toggler custom-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-between px-4"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link activo"
+                aria-current="page"
+                href="../index.html"
+                >Inicio</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Peliculas
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="../html/categoriapeliculas.html"
+                    >Acción</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/404.html">Comedia</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/404.html">Drama</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/404.html"
+                    >Suspenso</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/404.html">Terror</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Series
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="../html/404.html">Acción</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/404.html"
+                    >Adolescentes</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/categoriaseries.html"
+                    >Comedia</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/404.html">Drama</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/404.html"
+                    >Policiales</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../html/404.html"
+                    >Suspenso</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Buscar película o serie"
+                aria-label="Search"
+              />
+              <button class="boton-buscar botones-nav" type="submit">
+                <i class="ri-search-line"></i>
+              </button>
+            </form>
+          </ul>
+          <ul class="navbar-nav mb-2 mb-lg-0 justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="../html/contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../html/nosotros.html">Nosotros</a>
+            </li>
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                class="botones-nav me-2"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <i class="fas fa-lock me-1"></i>Login
+              </button>
+              <a href="../html/subscripcion.html">
+                <button value="registro" class="botones-nav">
+                  Suscribete
+                </button>
+              </a>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">
+            Inicio de sesion
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+          </button>
+
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+          <form>
+            <label>
+              <i class="fas fa-user"></i>
+              Usuario
+            </label>
+            <div>
+              <input type="text" placeholder="Usuario" required />
+            </div>
+
+            <label>
+              <i class="fas fa-key"></i>
+              Contraseña
+            </label>
+            <div>
+              <input type="password" placeholder="Contraseña" required />
+            </div>
+
+            <div id="ingresar">
+              <button class="btn btn-info" type="submit">
+                <i class="fas fa-lock"></i>
+                Ingresar
+              </button> 
+            </div>
+
+            <div class="foot">
+              <a href="./subscripcion.html" class="new-acc">
+                No tengo cuenta, Registrarse aqui...
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div><br>
+  </div>
+  <main>
+    <section class="principal">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/images/banner-elencargado.jpg " alt="robodelsiglo">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/banner-psiconautas.jpeg" alt="crimenarg">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/banner-graduados.jpg" alt="rls">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="./404.htmlcarouselExampleControls"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="./404.htmlcarouselExampleControls"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section class="galeria">
+      <div class="categoria d-flex align-items-center">
+        <h3 class="categoria subrayado">Series de Comedia</h3>
+        </a>
+      </div>
+      <hr>
+      <div class="container-fluid">
+        <div class="row justify-content-between mb-2">
+          <div class="col-3 d-none d-sm-inline">
+            <p>97 Series</p>
+          </div>
+          <div class="col-12 col-sm-9">
+            <div class="filtros-contenedor d-sm-flex justify-content-end d-block">
+              <div class="filtros me-3 mb-1 mb-sm-0"><a href="./404.html"><i class="ri-filter-3-fill me-1"></i>Filtros</a> </div>
+              <div class="filtros">
+                <label id="texto-orden">Orden:</label>
+                  <select  id="orden-select" name="orden">
+                    <option selected>Mejor valorada</option>
+                    <option>Últimas subidas</option>
+                    <option>Más vistas</option>
+                    <option>Más nuevas</option>
+                    <option>Más taquilleras</option>
+                  </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row g-1">
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/elncargado.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>El Encargado</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Eliseo trabaja como encargado en un importante edificio y, cada vez que los dueños no están,
+                    aprovecha para disfrutar de las comodidades de sus apartamentos.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/casifeliz.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Casi Feliz</h6>
+                  <h6>2.Temporadas</h6>
+                  <p>Pese a ser un exitoso conductor de radio, Sebastián no encuentra la felicidad por la difícil
+                    relación con su exesposa, el amor de su vida.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/divisionpalermo.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+  
+                  <h6>Division Palermo</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Una guardia urbana inclusiva, creada con el fin de mejorar la imagen de las fuerzas de seguridad.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/robomundial.jpeg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+  
+                  <h6>Robo Mundial</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Una divertida comedia sobre la selección de fútbol.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/porno_y_helado-226782593-large.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+  
+                  <h6>Porno y Helado</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Pablo y Ramón, son dos treintañeros perdedores que junto a
+                    Ceci, una joven estafadora, fingen tener una banda de rock. </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/serie-comedia-psiconauta.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Psiconautas</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Roberto Rodríguez de la Huerta, un estafador español, encuentra su vocación liderando un grupo de
+                    terapia en el Club Social y Deportivo Esfuerzo, en Buenos Aires.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <div class="card contenedor">
+              <a href="../html/casados-con-hijos.html">
+                <img src="../assets/images/serie-comedia-casadosconhijos.jpg" alt="Pelicula" class="card-img-top">
+              </a>
+              <div class="contenedor-reseña d-none d-sm-inline">
+                <div class="contenedor-botones-miniaturas">
+                    <a href="./casados-con-hijos.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                <a href="../html/casados-con-hijos.html" class="link-tarjetas">
+                  <h6>Casados con Hijos</h6>
+                  <h6>2.Temporadas</h6>
+                  <p>Son una familia disfuncional de clase media que lucha por sobrevivir en un barrio de
+                    Buenos Aires.</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/serie-comedia-terapiaalternativa.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Terapia Alternariva</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Una pareja de amantes le presenta un gran desafío a una joven y excéntrica terapeuta.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/educandoanina.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+  
+                  <h6>Educando a Nina</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Las separaron al nacer y tienen
+                    vidas opuestas. Sus vidas cambian radicalmente cuando se
+                    encuentran.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/graduados.jpeg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Graduados</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Andy y Loli fueron compañeros de la secundaria y no volvieron a verse en 18 años, vuelven a
+                    encontrarse y se revela un secreto inesperado.
+  
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/poneafranche.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Pone a Francella</h6>
+                  <h6>2.Temporadas</h6>
+                  <p>El humor de Guillermo Francella en este programa de divertidos sketches.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/sincodigo.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Sin Codigo</h6>
+                  <h6>2.Temporadas</h6>
+                  <p>Un joven hacker roba la contraseña de un sitio del departamento de policía. Gabriel Nielsen, policía
+                    que debería capturarlo, termina siendo su amigo.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/botineras.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Botineras</h6>
+                  <h6>1.Temporada</h6>
+                  <p>"Botineras" es una telenovela del género policial, inspirada en un fenómeno mundial: las vidas de
+                    las mujeres de los futbolistas.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/locoxvos.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Loco por Vos</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Pablo y Nati llevan seis meses de casados y se enfrentan a los dilemas de la convivencia.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/elsoderodemivida.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Sodero de mi Vida</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Alberto el sodero del barrio se enamora a primera vista de una clienta.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/sonamores.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Son Amores</h6>
+                  <h6>2.Temporadas</h6>
+                  <p>Esta es la historia de Roberto Sánchez, un árbitro de fútbol abandonado por su pareja y de sus
+                    sobrinos Pablo, Martín y Valeria.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/losunicos.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Los Unicos</h6>
+                  <h6>2.Temporadas</h6>
+                  <p>"Los Únicos" es una unidad especial y secreta de agentes, que se enfrenta al mal en pos del
+                    bienestar general de la humanidad. </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/costumbresarg.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Costumbres Argentinas</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Un historia de amor a través del tiempo entre dos familias argentinas que se oponen aunque con
+                    muchas cosas en común.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/sosmivida.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Sos Mi Vida</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Una entretenida novela romantica protagonizada por Natalia Oreiro y Facundo Arana</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/reveldew.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Revelde Way</h6>
+                  <h6>2.Temporadas</h6>
+                  <p>En un ambiente elitista y conservador un grupo de jóvenes debe transitar su adolescencia
+                    estimulados a reprimir sus impulsos naturales.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/patitofeo.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Patito Feo</h6>
+                  <h6>2.Temporadas</h6>
+                  <p>Patricia tiene que abandonar junto con su madre, Carmen la
+                    vida humilde en Bariloche para mudarse a la gran ciudad de Buenos Aires.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/casiangeles.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Casi Angeles</h6>
+                  <h6>4.Temporadas</h6>
+                  <p>Casi Ángeles es la historia de un grupo de chicos y adolescentes desamparados, que son explotados.
+                  </p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/solamentevos.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Solamente Vos</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Juan Cousteau lleva una vida familiar y placentera pero su mundo se ve en crisis cuando su esposa
+                    le pide un tiempo .</p>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-md-2 col-sm-3">
+            <a href="./404.html" class="links-series">
+              <div class="card contenedor">
+                <img src="../assets/images/señorespapis.jpg" alt="Pelicula" class="card-img-top">
+                <div class="contenedor-reseña d-none d-sm-inline">
+                  <div class="contenedor-botones-miniaturas">
+                    <a href="./404.html" class="reproducir me-1" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Reproducir"><i class="ri-play-circle-line"></i><p class="d-none d-md-inline"><p class="d-none d-md-inline">Ver ahora</p></a>
+                    <a href="./404.html" class="boton-reproductor d-none d-md-inline" data-bs-toggle="tooltip"
+                      data-bs-placement="top" data-bs-custom-class="custom-tooltip"
+                      data-bs-title="Guardar para más tarde"><i class="ri-time-fill"></i></a>
+                  </div>
+                  <h6>Señores Papis</h6>
+                  <h6>1.Temporada</h6>
+                  <p>Una serie que muestra cómo el vínculo entre los hombres y los hijos e hijas ha cambiado.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="row contenedor-pagination">
+          <div class="col-62 d-flex justify-content-center pt-4">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link d-none d-sm-block" >Anterior</a>
+                  <a class="page-link d-sm-none" href="./404.html">
+                    << </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="./404.html">1</a></li>
+                <li class="page-item" aria-current="page">
+                  <a class="page-link" href="./404.html">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="./404.html">3</a></li>
+                <li class="page-item">
+                  <a class="page-link d-none d-sm-block" href="./404.html">Siguiente</a>
+                  <a class="page-link d-sm-none" href="./404.html">>></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <hr>
+  </main>
+
+  <footer class="container-fluid text-center">
+    <div class="row align-items-center fila-footer py-2">
+      <div class="col-12 col-lg-4 col-md-4 py-1">
+        <a href="../index.html">
+          <img src="../assets/images/argencast-logo2.png" alt="logo" class="logo-foot" />
+        </a>
+      </div>
+      <div class="col-12 col-lg-4 col-md-4 py-1">
+        <p class="mb-0">Nuestras redes</p>
+        <div class="redes-agrupado d-flex gap-2 justify-content-center">
+          <a href="../html/404.html"><i class="ri-facebook-circle-fill redes"></i></a>
+          <a href="../html/404.html"><i class="ri-instagram-line redes"></i></a>
+          <a href="../html/404.html"><i class="ri-twitter-line redes"></i></a>
+        </div>
+      </div>
+      <div class="col-12 col-lg-4 col-md-4 py-1 d-flex flex-column">
+        <a href="../html/contacto.html" class="columna-contacto">Contacto</a>
+        <a href="../html/nosotros.html" class="columna-contacto">Nosotros</a>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+    integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+    crossorigin="anonymous"></script>
+    <script>
+      const tooltipTriggerList = document.querySelectorAll(
+          '[data-bs-toggle="tooltip"]'
+      );
+      const tooltipList = [...tooltipTriggerList].map(
+          (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+      );  
+  </script>
+</body>
+
+</html>

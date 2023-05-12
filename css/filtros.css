@@ -1,0 +1,36 @@
+.filtros {
+    border: #2a2a2a 2px solid;
+    padding: 0.3rem;
+    color: #fff;
+}
+
+#orden-select {
+    background-color: #000;
+    font-family: var(--fuente-links);
+    font-weight: 300;
+    color: var(--color-primario);
+    border: none;
+}
+
+.filtros a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.filtros i{
+    font-size: 1.1rem;
+}
+
+@media only screen and (max-width:227px)
+{
+    #orden-select {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width:186px)
+{
+    #orden-select {
+        font-size: 0.5rem;
+    }
+}
